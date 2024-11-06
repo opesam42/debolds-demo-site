@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero{
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), /* dark overlay */
+    url('../assets/graduand.jpg') no-repeat center/cover,
+    lightblue; /* fallback solid color */
+}
