@@ -8,3 +8,16 @@
     url('../assets/graduand.jpg') no-repeat center/cover,
     lightblue; /* fallback solid color */
 }
+
+.heading{
+    @apply font-heading font-black text-3xl uppercase text-gray-800 border-b-8 border-blue-700 w-fit;
+}
+.programs .item{
+    @apply flex flex-col justify-center gap-4 pb-4;
+}
+.programs .item h3{
+    @apply text-3xl font-bold text-amber-700 font-display;
+}
+.programs .item .photo-holder{
+    @apply h-80 bg-cover bg-no-repeat; 
+}
