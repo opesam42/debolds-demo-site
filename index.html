@@ -7,118 +7,146 @@
 
     <link rel="stylesheet" href="dist/output.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- FONTS STYLES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body class="flex flex-col font-body text-base">
+<body class="flex flex-col font-body text-base bg-amber-50">
     <div></div>
-    <header class="flex w-full px-2 py-6 bg-white justify-between items-center">
-        <div class="logo"><a href="#" class="flex gap-2 items-center"><img src="assets/debold-logo.png"><span>DEBOLD GROUP OF SCHOOLS</span></a></div>
-        <nav>
+    <header class="flex w-full px-2 py-6 lg:px-20 bg-white justify-between items-center sticky top-0 shadow">
+        <div class="logo"><a href="#" class="flex gap-2 items-center"><img src="assets/debold-logo.png" width="48px"><span class="font-heading font-semibold lg:text-xl lg:max-w-44 text-center">DEBOLD GROUP OF SCHOOLS</span></a></div>
+        <div id="menu-toggle" class="lg:hidden">
+            <svg class="hamburger" width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                
+                <g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H20C20.5523 7 21 6.55228 21 6C21 5.44772 20.5523 5 20 5H4ZM7 12C7 11.4477 7.44772 11 8 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H8C7.44772 13 7 12.5523 7 12ZM13 18C13 17.4477 13.4477 17 14 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H14C13.4477 19 13 18.5523 13 18Z" fill="#000000"/> </g>
+            </svg>
+
+            <svg class="close hidden" width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="#0F1729"/>
+            </svg>
+        </div>
+        <nav class="lg:static absolute top-20 left-0 hidden lg:block bg-white  w-full lg:w-auto font-heading font-semibold lg:font-body lg:font-normal text-lg">
             <ul class="flex flex-col lg:flex-row lg:gap-9 text-base lg:text-sm">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Programs</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a class="block w-full text-center py-2 hover:text-blue-600 text-blue-600" href="index.html">Home</a></li>
+                <li><a class="block w-full text-center py-2 hover:text-blue-600" href="#">Programs</a></li>
+                <li><a class="block w-full text-center py-2 hover:text-blue-600 text-blue-600" href="about.html">About Us</a></li>
+                <li><a class="block w-full text-center py-2 hover:text-blue-600" href="#">FAQ</a></li>
+                <li><a class="block w-full text-center py-2 hover:text-blue-600 text-blue-600" href="news.html">News</a></li>
+                <li><a class="block w-full text-center py-2 hover:text-blue-600 text-blue-600" href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="hero flex flex-col gap-3 justify-center bg-blue-900 h-96 px-6 bg-cover bg-center text-white">
-            <div class="heading font-display text-4xl md:text-5xl lg:text-6xl font-semibold ">De-Bolds Group of School</div>
+        <div class="hero flex flex-col gap-3 justify-center bg-blue-900 h-96 px-6 lg:px-20 bg-cover bg-center text-white">
+            <div class="font-display text-4xl md:text-5xl lg:text-6xl font-semibold ">De-Bolds Group of School</div>
             <span class="supporting-text w-fit">The School For The Child You Love</span>
-            <a class="block w-fit bg-blue-600 hover:bg-blue-800 text-white py-3 px-4 rounded-lg" href="#">Contact Us</a>
+            <a class="primary-btn" href="#">Contact Us</a>
         </div>
 
-        <section class="featured-news flex flex-col py-24 items-center gap-6">
+        <section class="featured-news flex flex-col py-24 px-6 lg:px-20 gap-6">
             <h2 class="heading">Featured News</h2>
-            <div class="item-container flex gap-4 overflow-x-scroll">
-                <a>
-                    <article class="flex flex-col items-left justify-end gap-2 w-72 h-80 p-1 text-white bg-contain bg-no-repeat rounded-xl" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/cowbell.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+            <div class="item-container flex gap-4 items-start lg:justify-center overflow-x-scroll lg:overflow-hidden">
+                <a href="#" class="block">
+                    <article class="flex flex-col items-left justify-end gap-2 w-72 lg:w-full h-80 lg:h-96 p-1 lg:p-3 text-white bg-cover bg-no-repeat rounded-xl hover:opacity-90" style="background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url('assets/cowbell.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
 
                             <div class="tag px-1 py-2 rounded-2xl border-2 border-white w-fit text-xs">News of the day</div>
-                            <div class="title font-heading font-bold text-3xl">Our student Qualifies for Cowbellpedia Maths Competition</div>
+                            <div class="title font-heading font-bold text-3xl lg:text-5xl w-2/3">Our student Qualifies for Cowbellpedia Maths Competition</div>
                     </article>
                 </a>
-                <a>
+<!--                 <a>
                     <article class="flex flex-col items-left justify-end gap-2 w-72 h-80 p-1 text-white bg-contain bg-no-repeat rounded-xl" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/summer-holiday.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
 
                         <div class="tag px-1 py-2 rounded-2xl border-2 border-white w-fit text-xs">News of the day</div>
                         <div class="title font-heading font-bold text-3xl">Enroll for Summer Coaching and Enrichment Program</div>
                     </article>
+                </a> -->
+
+                <a href="#" class="rounded-xl shadow bg-gray-50 hover:bg-gray-100 lg:hidden">
+                    <div class="flex flex-col justify-center items-center gap-4 font-semibold w-72 h-80 p-12 ">
+                        <p class="font-heading text-xl text-center">Click here to check more news</p>
+                        <div class="rounded-full border-2 border-amber-600 w-fit p-2 flex justify-center items-center text-center">
+                            <i class="fa fa-circular-regular fa-arrow-right text-amber-600"></i>
+                        </div>
+                        
+
+                    </div>
                 </a>
             </div>
         </section>
 
-        <section class="programs flex flex-col py-12 px-6 gap-3 bg-blue-50">
+        <section class="programs flex flex-col items-center py-12 px-6 lg:px-20 gap-3 bg-blue-50 text-sm">
             <h2 class="heading">Our Programs</h2>
-            <div class="item-container">
-                <a>
+            <div class="items-container flex flex-row flex-wrap justify-center gap-9">
+                <a href="#">
                     <div class="item">
                         <div class="photo-holder" style="background-image: url(assets/secondary-school.jpg);"></div>
                         <h3>Secondary School</h3>
-                        <div><strong>Admission:</strong> JSS1 - SSS3</div>
+                        <div><strong class="font-semibold">Admission:</strong> JSS1 - SSS3</div>
                             <p>Our secondary school offers a challenging academic program designed to prepare students for national and international examinations. With a focus on critical thinking, problem-solving, and leadership, we equip students to succeed in higher education and beyond.</p>
                         </div>
                 </a>
 
-                <a>
+                <a href="#">
                     <div class="item">
                         <div class="photo-holder" style="background-image: url(assets/primary-sch.jpg);"></div>
                         <h3>Primary School</h3>
-                        <div>Admission: Primary 1 - Primary 5</div>
+                        <div><strong class="font-semibold">Admission:</strong> Primary 1 - Primary 5</div>
                             <p>The primary school program encourages curiosity and fosters academic growth. Through an engaging curriculum that blends core subjects with arts, sports, and technology, we ensure that every child gains a strong academic foundation while developing key life skills.</p>
                         </div>
                 </a>
 
-                <a>
+                <a href="#">
                     <div class="item">
                         <div class="photo-holder" style="background-image: url(assets/nursery-school.jpg);"></div>
                         <h3>Nursery</h3>
-                        <div>Admission: Day Care - Nursery 2</div>
+                        <div><strong class="font-semibold">Admission:</strong> Day Care - Nursery 2</div>
                             <p>Our nursery program provides a nurturing and playful environment where young children explore, grow, and develop essential skills. We focus on early literacy, numeracy, and social interaction to prepare them for primary education.</p>
                         </div>
                 </a>
             </div>
         </section>
 
-        <section class="faculty">
-            <h2>Our Faculties</h2>
-            <div class="item-container">
-                <a>
-                    <div class="items">
-                        <div class="photo-holder"></div>
-                        <div>Library</div>
+        <section class="faculty flex flex-col gap-3 py-12 px-6 lg:px-20">
+            <h2 class="heading">Our Facilities</h2>
+            <div class="items-container flex px-6 gap-3 overflow-x-scroll">
+                <a href="#">
+                    <div class="item" style="background-image: url(assets/library.jpg);">
+                        <div class="caption">Library</div>
                     </div>
-                    <div class="items">
-                        <div class="photo-holder"></div>
-                        <div>Science Laboratory</div>
-                    </div><div class="items">
-                        <div class="photo-holder"></div>
-                        <div>Sport Centre</div>
-                    </div><div class="items">
-                        <div class="photo-holder"></div>
-                        <div>Computer Lab</div>
-                    </div><div class="items">
-                        <div class="photo-holder"></div>
-                        <div>Library</div>
+                </a>
+                <a href="#">
+                    <div class="item" style="background-image: url(assets/science-lab.jpg);">
+                        <div class="caption">Science Laboratory</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="item" style="background-image: url(assets/sport-centre.jpg);">
+                        <div class="caption">Sport Centre</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="item" style="background-image: url(assets/computer-centre.jpg);">
+                        <div class="caption">Computer Lab</div>
                     </div>
                 </a>
             </div>
-            <a>Discover More</a>
+            <a class="primary-btn self-center" href="#">Discover more</a>
         </section>
 
-        <section class="testmonials">
-            <div class="item-container">
+        <section class="testimonials bg-blue-50 flex flex-col gap-3 py-12 px-6 pb-24 lg:px-20">
+            <h2 class="heading">Testimonials</h2>
+            <div class="item-container flex flex-start justify-center gap-5 flex-wrap items-center">
                 <div class="item">
-                    <svg></svg>
-                    <p>At Bright Future Academy, learning is fun and interactive. The teachers really care about our progress, and the modern classrooms make every lesson engaging. I also love the sports activities—we get to play and compete in so many different games!</p>
-                    <figure">
-                        <div class="photo-holder"></div>
+                    <img src="assets/quote.svg" width="54px" class="self-start">
+                    <p>At De-Bolds School, learning is fun and interactive. The teachers really care about our progress, and the modern classrooms make every lesson engaging. I also love the sports activities—we get to play and compete in so many different games!</p>
+                    <figure>
+                        <div class="photo-holder" style="background-image: url(assets/student.jpg);"></div>
                         <figcaption>
                             <span class="name">Adaeze Chike</span>
                             <span class="descr">SS2 Student</span>
@@ -127,72 +155,82 @@
                 </div>
 
                 <div class="item">
-                    <svg></svg>
-                    <p>At Bright Future Academy, learning is fun and interactive. The teachers really care about our progress, and the modern classrooms make every lesson engaging. I also love the sports activities—we get to play and compete in so many different games!</p>
-                    <figure">
-                        <div class="photo-holder"></div>
+                    <img src="assets/quote.svg" width="54px" class="self-start">
+                    <p>As a parent, I couldn’t ask for a better environment for my child. The facilities are top-notch, and the emphasis on both academics and character development is truly impressive. My daughter’s confidence has soared since she joined De-Bolds School, and the supportive community makes all the difference.</p>
+                    <figure>
+                        <div class="photo-holder" style="background-image: url(assets/adekunle-parent.png);"></div>
                         <figcaption>
-                            <span class="name">Adaeze Chike</span>
-                            <span class="descr">SS2 Student</span>
+                            <span class="name">Mr. Adekunle</span>
+                            <span class="descr">Parent</span>
                         </figcaption>
                     </figure>
                 </div>
 
                 <div class="item">
-                    <svg></svg>
-                    <p>At Bright Future Academy, learning is fun and interactive. The teachers really care about our progress, and the modern classrooms make every lesson engaging. I also love the sports activities—we get to play and compete in so many different games!</p>
-                    <figure">
-                        <div class="photo-holder"></div>
+                    <img src="assets/quote.svg" width="54px" class="self-start">
+                    <p>Teaching at De-Bolds School is incredibly rewarding. The school provides all the tools and resources we need to create meaningful learning experiences. The students are curious and motivated, and the support from the administration allows us to innovate in the classroom.</p>
+                    <figure>
+                        <div class="photo-holder" style="background-image: url(assets/teacher.jpg);"></div>
                         <figcaption>
-                            <span class="name">Adaeze Chike</span>
-                            <span class="descr">SS2 Student</span>
+                            <span class="name">Mrs. Olademeji</span>
+                            <span class="descr">Science Teacher</span>
                         </figcaption>
                     </figure>
                 </div>
             </div>
         </section>
 
-        <section>
-            <h2>Do You Have A Question For Us</h2>
-            <p>We've got answers! Whether you're curious about admissions, school policies, or extracurricular activities, our FAQ page covers it all.</p>
-            <p>Check out our <a>FAQ</a></p>
+        <section class="flex items-center gap-4 flex-col md:flex-row px-6 pb-12 lg:pr-20 lg:pl-0">
+            <div class="photo-holder w-full h-72 bg-cover bg-no-repeat bg-center" style="background-image: url(assets/standard-classroom.jpg);"></div>
+            
+            <div>
+                
+                <div>
+                    <div class="rounded-full bg-gray-200 w-14 h-14 p-4 mb-4"><img src="assets/question-mark.svg" class="w-full"></div>
+                    <h2 class="font-heading font-black text-3xl text-gray-800">Do You Have A Question For Us?</h2>
+                    <p>We've got answers! Whether you're curious about admissions, school policies, or extracurricular activities, our FAQ page covers it all.</p>
+                    <a href="#" class="block text-blue-600 hover:text-blue-700 font-medium mt-4">Check out our FAQ <i class="fa fa-arrow-right"></i></a>
+                </div>
+                
+            </div>
+            
         </section>
     </main>
 
-    <footer>
-        <nav>
-            <div>
-                <div class="title">Quick Links</div>
-                <ul class="link">
-                    <li></li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Programs</a></li>
-                    <li><a href="#">Admission</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Contact Us</a></li>
+    <footer class="bg-blue-900 text-white mt-6 pt-12 px-6 lg:px-20 flex flex-col gap-12 text-sm">
+        <nav class="flex flex-col lg:flex-row gap-4 lg:gap-48">
+                <ul class="link font-light flex flex-col gap-2">
+                    <li class="title font-semibold">Quick Links</li>
+                    <li></li><a class="hover:underline" href="#">Home</a></li>
+                    <li><a class="hover:underline" href="#">About Us</a></li>
+                    <li><a class="hover:underline" href="#">Programs</a></li>
+                    <li><a class="hover:underline" href="#">Admission</a></li>
+                    <li><a class="hover:underline" href="#">News</a></li>
+                    <li><a class="hover:underline" href="#">Contact Us</a></li>
                 </ul>
-            </div>
-            <div>
-                <div class="title">Social</div>
-                <ul class="link">
-                    <li></li><a href="#">Facebook</a></li>
-                    <li><a href="#">Twitter X</a></li>
-                    <li><a href="#">Instagram</a></li>
+
+                <ul class="link font-light flex flex-col gap-2">
+                    <li class="title font-semibold">Social</li>
+                    <li><a class="hover:underline" href="#">Facebook</a></li>
+                    <li><a class="hover:underline" href="#">Twitter X</a></li>
+                    <li><a class="hover:underline" href="#">Instagram</a></li>
                 </ul>
-            </div>
         </nav>
 
-        <div>
-            <img>
-            <div>
-                <div>De-Bolds Group of Schools</div>
-                <div> <strong>Address: </strong>25 & 33  Olujonwo Street, Satelite/Equitable Junction, Ikorodu, Lagos.</div>
-                <div><strong>Tel: </strong>08023254981, 08023635726</div>
-                <div><strong>Email: </strong>deboldsgroupofschools@gmail.com</div>
-            </div>
+        <div class="flex flex-col gap-2">
+            <img class='block w-28' src="assets/debold-logo.png">
+            <div class="font-bold text-base">De-Bolds Group of Schools</div>
+            <div> <strong>Address: </strong>25 & 33  Olujonwo Street, Satelite/Equitable Junction, Ikorodu, Lagos.</div>
+            <div><strong>Tel: </strong>08023254981, 08023635726</div>
+            <div><strong>Email: </strong>deboldsgroupofschools@gmail.com</div>
         </div>
 
-        <div class="copyright">$copy; De-Bold Group of Schools. All right reserved.</div>
+        <div class="self-center lg:self-end">
+            <!-- <div class="copyright">&copy; De-Bold Group of Schools. All right reserved.</div> -->
+            <div class="font-heading uppercase text-center mb-2">Designed by <a class="underline font-medium" href="https://gbenga.koyeb.app">Gbenga Opeyemi</a> </div>
+        </div>
     </footer>
+
+    <script src="scripts/script.js"></script>
 </body>
 </html>
